@@ -1,0 +1,193 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --lightGrey: hsl(0, 0%, 98%);
+}
+
+body {
+  background-color: var(--lightGrey);
+}
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+body .header__text1 {
+  font-size: 22px;
+  font-weight: 200;
+}
+body .header__text2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+body .header__text3 {
+  font-weight: 200;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+body .container {
+  display: grid;
+  width: 80vw;
+  margin: 50px auto;
+  max-width: 1440px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-areas: ". B ." "A B D" "A C D" ". C .";
+}
+body .container__box-1 {
+  grid-area: A;
+  border-top: 4px solid var(--cyan);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+  box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+}
+body .container__box-1 .title {
+  margin-left: 20px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+body .container__box-1 .description {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+body .container__box-1 img {
+  margin-top: 25px;
+  width: 50px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+body .container__box-2 {
+  grid-area: B;
+  border-top: 4px solid var(--red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+  box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+}
+body .container__box-2 .title {
+  margin-left: 20px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+body .container__box-2 .description {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+body .container__box-2 img {
+  margin-top: 25px;
+  width: 50px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+body .container__box-3 {
+  grid-area: C;
+  border-top: 4px solid var(--orange);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+  box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+}
+body .container__box-3 .title {
+  margin-left: 20px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+body .container__box-3 .description {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+body .container__box-3 img {
+  margin-top: 25px;
+  width: 50px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+body .container__box-4 {
+  grid-area: D;
+  border-top: 4px solid var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+  box-shadow: 0px 9px 20px -12px rgb(22, 23, 23);
+}
+body .container__box-4 .title {
+  margin-left: 20px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+body .container__box-4 .description {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+body .container__box-4 img {
+  margin-top: 25px;
+  width: 50px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media only screen and (max-width: 800px) {
+  body .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "A" "B" "C" "D";
+  }
+}/*# sourceMappingURL=style.css.map */
