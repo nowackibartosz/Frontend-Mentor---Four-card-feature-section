@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   -webkit-box-shadow: 0px 9px 20px -12px rgba(22, 23, 23, 1);
-  -moz-box-shadow: 0px 9px 20px -12px rgba(22, 23, 23, 1);
+  -moz-box-shadow: 0px 9px 20px -12px rgba(22, 23, 23, 1); //zbędne
   box-shadow: 0px 9px 20px -12px rgba(22, 23, 23, 1);
 
   .title {
@@ -28,7 +28,7 @@
   }
   .description {
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 10px; //skrocic
     font-weight: 200;
   }
   img {
@@ -44,9 +44,9 @@ body {
   background-color: var(--lightGrey);
 
   .header {
-    display: flex;
-    margin-top: 50px;
+    display: flex; //zbędne
     flex-direction: column;
+    margin-top: 50px;
     text-align: center;
 
     &__text1 {
@@ -61,6 +61,8 @@ body {
       font-weight: 200;
       margin-left: 30vw;
       margin-right: 30vw;
+
+      //mozna by tu flexem
     }
   }
 
